@@ -1,9 +1,5 @@
 [build-system]
-requires = ["setuptools", "wheel","torch"
-"pytest",
-"flake8",
-"ruff"
-]
+requires = ["setuptools", "wheel","torch","pytest","flake8","ruff"]
 
 [tool.pytest.ini_options]
 minversion = "6.0"
