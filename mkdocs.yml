@@ -1,0 +1,67 @@
+site_name: Zeta Docs
+site_url: 'https://zeta.apac.ai'
+site_author: APAC AI
+site_description: >-
+  Create Ultra-Powerful Multi-Modality Models Seamlessly and Efficiently in as
+  minimal lines of code as possible.
+repo_name: kyegomez/zeta
+repo_url: 'https://github.com/kyegomez/zeta'
+edit_uri: 'https://github.com/kyegomez/"zeta/tree/main/docs'
+copyright: APAC Corp 2023. All rights reserved.
+plugins:
+  - glightbox
+  - search
+extra_css:
+  - docs/assets/css/extra.css
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://www.twitter.com/tummycom
+    - icon: fontawesome/brands/github
+      link: https://github.com/evelynmitchell/DimensionMixer/
+theme:
+  name: material
+  custom_dir: docs/overrides
+  palette:
+    - scheme: default
+      primary: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - announce.dismiss
+  font:
+    text: Roboto
+    code: Roboto Mono
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - admonition
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed
+  - tables
+  - def_list
+  - footnotes
+nav:
+  - Home:
+      - Overview: "index.md"
+  
+  - Blog:
+    - Introduction: "blog/introduction.md"
