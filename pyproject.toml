@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--doctest-modules"
+testpaths = [
+    "tests",
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py37']
+
+[tool.isort]
+profile = "black"
+
+[tool.pylint]
+disable = [
+    "C0114",  # missing-module-docstring
+    "C0115",  # missing-class-docstring
+    "C0116",  # missing-function-docstring
+]
+
+[tool.mypy]
+files = "src/"
+ignore_missing_imports = true
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"]
