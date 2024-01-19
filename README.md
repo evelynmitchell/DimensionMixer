@@ -5,6 +5,8 @@ From:
 [Dimension Mixer: A Generalized Method for
 Structured Sparsity in Deep Neural Networks](https://arxiv.org/pdf/2311.18735.pdf)
 
+![DimensionMixer](/img/DimensionMixer.png)
+
 "The recent success of multiple neural architectures
 like CNNs, Transformers, and MLP-Mixers motivated us to look
 for similarities and differences between them. We found that
@@ -26,3 +28,4 @@ Linear Butterfly Mixers are efficient and scale well when the
 host architectures are used as mixing function. Additionally, we
 propose Patch-Only MLP-Mixer for processing spatial "
 
+DimensionMIxerBlock provides a block linear method and an MLP method, as well as a permutation method to ensure full mixing..
