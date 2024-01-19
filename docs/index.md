@@ -22,7 +22,7 @@ You can install `DimensionMixer` with pip in a
 !!! example "pip install (recommended)"
 
     === "headless"
-        The headless installation of `zeta` is designed for environments where graphical user interfaces (GUI) are not needed, making it more lightweight and suitable for server-side applications.
+        The headless installation of `DimensionMixer` is designed for environments where graphical user interfaces (GUI) are not needed, making it more lightweight and suitable for server-side applications.
 
         ```bash
         pip install git+https://github.com/evelynmitchell/DimensionMixer.git
