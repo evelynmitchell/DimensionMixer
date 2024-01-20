@@ -2,7 +2,8 @@
 
 import torch
 import torch.nn as nn
-from main import BlockLinear, BlockMLP
+from .dimension_mixer import main
+from .dimension_mixer.main import BlockLinear, BlockMLP
 
 def test_block_linear():
     block_linear = BlockLinear(2, 3, 4)
